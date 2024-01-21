@@ -1,0 +1,139 @@
+body {
+    background-image: url('pic1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container
+{
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+
+}
+.card {
+    position: relative;
+    left: 230px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.card, .card-header, .card-body, .heading, .user-form input, .avatar, .user-info, .user-info h2, .user-info p, .user-info ul, .user-info ul li, .user-info ul li strong, .repo {
+    background-color: #212529;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    top: 15px;
+}
+
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.user-form input::placeholder {
+    color: #bbb;
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+#main {
+    position: relative;
+    right: 230px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #212a72;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.light-mode .card, .light-mode .card-header, .light-mode .card-body, .light-mode .heading, .light-mode .user-form input, .light-mode .avatar, .light-mode .user-info, .light-mode .user-info h2, .light-mode .user-info p, .light-mode .user-info ul, .light-mode .user-info ul li, .light-mode .user-info ul li strong, .light-mode .repo {
+    background-color: white;
+    color: black;
+    .user-form input{
+        background-color: black;
+        color: white;
+    }
+}
+
+/* Style for the mode button */
+.mode-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.mode-btn:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form input {
+        max-width: 400px;
+    }
+} 

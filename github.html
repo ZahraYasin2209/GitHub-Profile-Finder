@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="github.css" />
+        <title>Github Profiles</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card mb-3 mt-5">
+                        <div class="card-header">GitHub Profile Finder</div>
+        
+                        <div class="mode-btn-div d-flex mt-2">
+                            <button class="mode-btn" id="mode-button">
+                                <i class="fa fa-sun-o"></i> <!-- Sun icon for light mode -->
+                                <i class="fa fa-moon-o" style="display: none;"></i> <!-- Moon icon for dark mode -->
+                            </button>
+                        </div>
+        
+                        <div class="card-body">
+                            <h5 class="card-title heading">Enter the website you want to search? </h5>
+                            <div class="input-group mb-3">
+                                <form class="user-form" id="form">
+                                    <input
+                                        type="text"
+                                        id="search"
+                                        autocomplete="off"
+                                        placeholder="Search a Github User"
+                                    />
+                                </form>
+                                <div>
+                                    <main id="main"></main>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+            integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="github.js"></script>
+    </body>
+</html>
